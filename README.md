@@ -17,7 +17,7 @@ Initial versions of this module used [esprima](https://github.com/jquery/esprima
 $ npm install -g recast-deamdify
 ```
 
-## Usage
+## Example
 
 ```
 $ cat test/fixtures/a.js | recast-deamdify > foo.js
