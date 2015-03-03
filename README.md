@@ -1,5 +1,8 @@
 # recast-deamdify
 
+[![Build Status](https://travis-ci.org/tanem/recast-deamdify.png?branch=master)](https://travis-ci.org/tanem/recast-deamdify)
+[![NPM version](https://badge.fury.io/js/recast-deamdify.svg)](http://badge.fury.io/js/recast-deamdify)
+
 Transform AMD modules to CommonJS using [recast](https://github.com/benjamn/recast).
 
 ## Motivation
