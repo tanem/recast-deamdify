@@ -1,0 +1,35 @@
+{
+  "name": "recast-deamdify",
+  "version": "1.0.0",
+  "description": "Convert AMD files to CommonJS using recast.",
+  "main": "index.js",
+  "bin": "bin/cmd.js",
+  "dependencies": {
+    "lodash.compose": "^2.4.1",
+    "lodash.zip": "^3.0.0",
+    "recast": "^0.10.0",
+    "through": "^2.3.6"
+  },
+  "devDependencies": {
+    "tape": "^3.5.0"
+  },
+  "scripts": {
+    "test": "tape test/recast-deamdify.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tanem/recast-deamdify.git"
+  },
+  "homepage": "https://github.com/tanem/recast-deamdify",
+  "keywords": [
+    "transform",
+    "amd",
+    "require",
+    "commonjs"
+  ],
+  "author": {
+    "name": "Tane Morgan",
+    "url": "http://github.com/tanem"
+  },
+  "license": "MIT"
+}
