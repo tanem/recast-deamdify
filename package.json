@@ -11,6 +11,7 @@
     "through": "^2.3.6"
   },
   "devDependencies": {
+    "glob": "^4.4.1",
     "tape": "^3.5.0"
   },
   "scripts": {
