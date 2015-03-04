@@ -20,7 +20,36 @@ $ npm install -g recast-deamdify
 ## Example
 
 ```
-$ cat test/fixtures/a.js | recast-deamdify > foo.js
+$ cat test/fixtures/a.js
+define('a', ['./foo', './bar'], function(foo, bar){
+
+  'use strict';
+
+  var baz = require('baz');
+  var qux = require('qux');
+
+  console.log('some line of code');
+
+  return {
+    height: foo.height,
+    width: bar.width
+  };
+
+});
+$ cat test/fixtures/a.js | recast-deamdify
+'use strict';
+
+var foo = require('./foo');
+var bar = require('./bar');
+var baz = require('baz');
+var qux = require('qux');
+
+console.log('some line of code');
+
+module.exports = {
+  height: foo.height,
+  width: bar.width
+};
 ```
 
 ## Tests
