@@ -52,6 +52,15 @@ module.exports = {
 };
 ```
 
+```js
+var recastDeamdify = require('recast-deamdify');
+var fs = require('fs');
+
+fs.createReadStream('./test/fixtures/a.js')
+  .pipe(recastDeamdify())
+  .pipe(fs.createWriteStream('foo.js'));
+```
+
 ## Tests
 
 ```
