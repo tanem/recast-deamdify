@@ -19,8 +19,9 @@ $ npm install -g recast-deamdify
 
 ## Example
 
-```
-$ cat test/fixtures/a.js
+Given `a.js`:
+
+```js
 define('a', ['./foo', './bar'], function(foo, bar){
 
   'use strict';
@@ -36,7 +37,28 @@ define('a', ['./foo', './bar'], function(foo, bar){
   };
 
 });
-$ cat test/fixtures/a.js | recast-deamdify
+```
+
+This:
+
+```
+$ cat test/fixtures/a.js | recast-deamdify > foo.js
+```
+
+Or this:
+
+```js
+var recastDeamdify = require('recast-deamdify');
+var fs = require('fs');
+
+fs.createReadStream('./test/fixtures/a.js')
+  .pipe(recastDeamdify())
+  .pipe(fs.createWriteStream('foo.js'));
+```
+
+Will produce `foo.js`:
+
+```js
 'use strict';
 
 var foo = require('./foo');
@@ -50,15 +72,6 @@ module.exports = {
   height: foo.height,
   width: bar.width
 };
-```
-
-```js
-var recastDeamdify = require('recast-deamdify');
-var fs = require('fs');
-
-fs.createReadStream('./test/fixtures/a.js')
-  .pipe(recastDeamdify())
-  .pipe(fs.createWriteStream('foo.js'));
 ```
 
 ## Tests
