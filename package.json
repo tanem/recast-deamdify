@@ -1,6 +1,6 @@
 {
   "name": "recast-deamdify",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Convert AMD files to CommonJS using recast.",
   "main": "index.js",
   "bin": "bin/cmd.js",
