@@ -1,0 +1,11 @@
+Usage: recast-deamdify [source dir] {OPTIONS}
+
+Options:
+  --output, -o  Write the trasformed files to this dir.
+                This option is required if a source dir is specified.
+                If unspecified and a single source file is being transformed,
+                recast-deamdify will print to stdout.
+
+Examples:
+  cat foo.js | recast-deamdify > bar.js
+  recast-deamdify src/ -o dest/
