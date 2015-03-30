@@ -20,6 +20,11 @@ module.exports = function(options, done){
   });
 
   var counter = 0;
+  var sourceDone = false;
+
+  source.on('end', function(){
+    sourceDone = true;
+  });
 
   source.pipe(through(function(entry){
 
@@ -28,8 +33,8 @@ module.exports = function(options, done){
     fs.createReadStream(entry.fullPath)
       .pipe(deamdify())
       .pipe(write(path.join(options.destDir, entry.parentDir), entry.name))
-      .on('finish', function(){
-        if (--counter) done();
+      .on('end', function(){
+        if (!--counter && sourceDone) done();
       });
 
     this.queue(null);

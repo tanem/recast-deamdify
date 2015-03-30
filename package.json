@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "glob": "^4.4.1",
+    "rimraf": "^2.3.2",
     "tape": "^3.5.0"
   },
   "scripts": {
