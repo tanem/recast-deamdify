@@ -116,3 +116,7 @@ recastDeamdify({
 ```
 $ npm test
 ```
+
+## License
+
+MIT
