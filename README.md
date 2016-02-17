@@ -3,6 +3,8 @@
 [![build status](https://img.shields.io/travis/tanem/recast-deamdify/master.svg?style=flat-square)](https://travis-ci.org/tanem/recast-deamdify)
 [![npm version](https://img.shields.io/npm/v/recast-deamdify.svg?style=flat-square)](https://www.npmjs.com/package/recast-deamdify)
 [![npm downloads](https://img.shields.io/npm/dm/recast-deamdify.svg?style=flat-square)](https://www.npmjs.com/package/recast-deamdify)
+[![dependency status](https://david-dm.org/tanem/recast-deamdify.svg?style=flat-square)](https://david-dm.org/tanem/recast-deamdify)
+[![devDependency status](https://david-dm.org/tanem/recast-deamdify/dev-status.svg?style=flat-square)](https://david-dm.org/tanem/recast-deamdify#info=devDependencies)
 
 Transform AMD modules to CommonJS using [recast](https://github.com/benjamn/recast).
 
