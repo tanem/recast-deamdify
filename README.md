@@ -1,5 +1,7 @@
 # recast-deamdify
 
+> **Unmaintained.** This project is no longer maintained and the repository is archived. The npm package is deprecated.
+
 [![build status](https://img.shields.io/travis/tanem/recast-deamdify/master.svg?style=flat-square)](https://travis-ci.org/tanem/recast-deamdify)
 [![npm version](https://img.shields.io/npm/v/recast-deamdify.svg?style=flat-square)](https://www.npmjs.com/package/recast-deamdify)
 [![npm downloads](https://img.shields.io/npm/dm/recast-deamdify.svg?style=flat-square)](https://www.npmjs.com/package/recast-deamdify)
